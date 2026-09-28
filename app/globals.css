@@ -188,9 +188,7 @@ body {
 }
 
 .stage-scrim {
-  background:
-    linear-gradient(to bottom, rgba(1, 1, 1, 0.62) 0%, rgba(1, 1, 1, 0) 16%),
-    linear-gradient(to top, #010101 0%, rgba(1, 1, 1, 0.88) 18%, rgba(1, 1, 1, 0.55) 40%, rgba(1, 1, 1, 0) 64%);
+  background: none;
 }
 
 .copy-veil {
@@ -203,46 +201,20 @@ body {
   position: absolute;
   z-index: -1;
   pointer-events: none;
-}
-
-.copy-veil-center::before {
-  inset: -22% -6% -8%;
+  left: 50%;
+  top: 50%;
+  width: 148%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   background: radial-gradient(
-    ellipse at 50% 40%,
-    rgba(1, 1, 1, 0.82) 0%,
-    rgba(1, 1, 1, 0.58) 42%,
-    rgba(1, 1, 1, 0) 74%
-  );
-}
-
-.copy-veil-left::before {
-  inset: -36% -8% -16% -14%;
-  background: linear-gradient(
-    90deg,
+    circle at center,
     rgba(1, 1, 1, 0.9) 0%,
-    rgba(1, 1, 1, 0.72) 52%,
-    rgba(1, 1, 1, 0) 100%
+    rgba(1, 1, 1, 0.62) 36%,
+    rgba(1, 1, 1, 0.28) 56%,
+    rgba(1, 1, 1, 0.08) 70%,
+    rgba(1, 1, 1, 0) 82%
   );
-}
-
-.copy-veil-right::before {
-  inset: -40% -14% -18% -28%;
-  background: linear-gradient(
-    270deg,
-    rgba(1, 1, 1, 0.92) 0%,
-    rgba(1, 1, 1, 0.78) 48%,
-    rgba(1, 1, 1, 0) 100%
-  );
-}
-
-.copy-veil :where(h1, h2) {
-  filter: drop-shadow(0 2px 18px rgba(0, 0, 0, 0.72));
-}
-
-.copy-veil :where(p, li) {
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.9),
-    0 10px 28px rgba(0, 0, 0, 0.55);
 }
 
 .scroll-line {

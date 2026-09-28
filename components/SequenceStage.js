@@ -236,11 +236,11 @@ export default function SequenceStage() {
             <p className="mt-4 text-[clamp(20px,2.4vw,34px)] font-medium tracking-tight text-white">
               Silence, perfected.
             </p>
-            <p className="mx-auto mb-14 mt-3 max-w-md text-[16px] leading-relaxed text-white/90 md:text-[17px]">
+            <p className="mx-auto mt-3 max-w-md text-[16px] leading-relaxed text-white/90 md:text-[17px]">
               Flagship wireless noise cancelling, re‑engineered for a world that never stops.
             </p>
-            <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3">
-              <span className="text-[10px] uppercase tracking-[0.32em] text-white/40">Scroll</span>
+            <div className="mt-8 flex flex-col items-center gap-3">
+              <span className="text-[10px] uppercase tracking-[0.32em] text-white/75">Scroll</span>
               <span className="scroll-line" aria-hidden="true">
                 <i />
               </span>

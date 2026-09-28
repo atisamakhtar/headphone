@@ -52,15 +52,8 @@ export default function ClosingShot() {
           className="absolute inset-0 h-full w-full object-cover object-[center_38%] will-change-transform"
           style={{ transform: "translate3d(0, 0, 0) scale(1.2)" }}
         />
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to top, #010101 0%, rgba(1,1,1,0.94) 16%, rgba(1,1,1,0.72) 34%, rgba(1,1,1,0.28) 52%, rgba(1,1,1,0) 68%)",
-          }}
-        />
         <div className="relative z-10 flex h-full items-end justify-center px-5 pb-16 text-center md:pb-20">
-          <div className="max-w-3xl">
+          <div className="copy-veil max-w-3xl">
             <h2 className="headline-gradient text-[clamp(40px,6vw,80px)] font-semibold leading-[0.94] tracking-tightest">
               Hear everything.
               <br />
